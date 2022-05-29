@@ -1,0 +1,36 @@
+#ubuntu18.04 Intel Realsense T265与Realsense D435i 使用教程:
+https://blog.csdn.net/xtdx_xty/article/details/118146662
+
+mkdir -p catkin_ws/src
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+#Ros melodic python3环境解决cv_bridge问题
+https://blog.csdn.net/weixin_42675603/article/details/107785376
+
+sudo apt-get install python3-catkin-tools python3-dev python3-catkin-pkg-modules python3-numpy python3-yaml ros-noetic-cv-bridge
+
+apt-cache show ros-noetic-cv-bridge | grep Version
+git checkout 1.16.0
+
+
+
+#ROS（python）如何实现1个节点同时订阅2个话题，并实现话题同步，调用同一个callback
+https://blog.csdn.net/m0_46447790/article/details/115828803
+
+#py-lz4framed 
+https://pypi.org/project/py-lz4framed/
+sudo apt install python3-pip
+pip3 install py-lz4framed
+
+#PyTurboJPEG
+https://github.com/lilohuang/PyTurboJPEG
+sudo apt-get update
+sudo apt-get install libturbojpeg
+sudo pip install PyTurboJPEG
+
+
+#rosdep更新失败问题
+https://zhuanlan.zhihu.com/p/398754989
+
+#Ubuntu下串口调试工具
+https://blog.csdn.net/wilylcyu/article/details/51766283
