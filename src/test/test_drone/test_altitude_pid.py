@@ -40,7 +40,7 @@ def drone_test_publisher():
     pause_time = 1.0
     flight_time = rospy.Time.now()
     while not rospy.is_shutdown():
-                if (rospy.Time.now()-flight_time)<=rospy.Duration(wait_time):
+        if (rospy.Time.now()-flight_time)<=rospy.Duration(wait_time):
             drone_vel.linear.x = 0
             drone_vel.linear.y = 0
             drone_vel.linear.z = 2#[0.05,0.05,0.05]
@@ -57,7 +57,7 @@ def drone_test_publisher():
             set_mavros_altitude = init_mavros_altitude+1
             if mavros_altitude:
                 vz = (set_mavros_altitude - mavros_altitude)*kp_z
-            else
+            else:
                 vz = 0 
             vz = np.clip(vz,-1,1)
             drone_vel.linear.x = 0
